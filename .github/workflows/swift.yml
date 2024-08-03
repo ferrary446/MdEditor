@@ -1,11 +1,24 @@
 name: Swift
+
 on:
   pull_request:
     branches: [ "main" ]
-jobs: build:
+
+jobs: 
+  build:
     name: Build app
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Build
-        run: exec ./.github/build.sh
+        - name: Install Homebrew
+          run: |
+              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+              echo "Homebrew installed"
+
+        - name: Install SwiftLint
+          run: |
+              brew install swiftlint
+              echo "SwiftLint installed"
+
+        - uses: actions/checkout@v3
+        - name: Build
+          run: exec ./.github/build.sh
