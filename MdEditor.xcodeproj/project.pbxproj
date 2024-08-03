@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325CEE5C8D0FAB09DE4417D8 /* TaskManagerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */; };
 		3D353F7BC97C38D4C340C9AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448EBB93F78A68E678BA3DA /* SceneDelegate.swift */; };
 		A604951E870E9878A41BF283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53B4AC78FC9BF7B5367F58 /* AppDelegate.swift */; };
 		E949DAFD58405463BE7D96C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F13CAF91B046ECA2FD0D82 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EE3B911DF7C0FD350112B75 /* TaskManagerPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TaskManagerPackage; path = Packages/TaskManagerPackage; sourceTree = "<group>"; };
 		1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MdEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B53B4AC78FC9BF7B5367F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F13CAF91B046ECA2FD0D82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325CEE5C8D0FAB09DE4417D8 /* TaskManagerPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,14 @@
 				1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5555B5AE5B0B882452ACEFC9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3B911DF7C0FD350112B75 /* TaskManagerPackage */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		9811A702508B46C00A4ACB6D /* InfoPlists */ = {
@@ -82,6 +93,7 @@
 			children = (
 				AF6501DB0322CD156914F714 /* Project */,
 				09433757354D2414908D4E3B /* Products */,
+				5555B5AE5B0B882452ACEFC9 /* Packages */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +125,9 @@
 			dependencies = (
 			);
 			name = MdEditor;
+			packageProductDependencies = (
+				9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */,
+			);
 			productName = MdEditor;
 			productReference = 1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +139,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 395B29EAB07768BD4B943111 /* Build configuration list for PBXProject "MdEditor" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -171,7 +188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo: \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n        exit 1\n    fi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo: \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n        exit 1\n    fi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -344,7 +361,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -374,6 +394,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TaskManagerPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B0050D6E96ECDC31F3596D8 /* Project object */;
 }
