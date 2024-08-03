@@ -34,6 +34,10 @@ let swiftLintScript: TargetScript = {
     )
 }()
 
+let taskManagerPackage: Package = .local(
+    path: .relativeToManifest("Packages/TaskManagerPackage")
+)
+
 let target: Target = .target(
     name: "MdEditor",
     destinations: .iOS,
@@ -42,10 +46,14 @@ let target: Target = .target(
     deploymentTargets: .iOS("15.0"),
     infoPlist: .extendingDefault(with: infoPlist),
     sources: "Sources/**",
-    scripts: [swiftLintScript]
+    scripts: [swiftLintScript],
+    dependencies: [
+        .package(product: "TaskManagerPackage")
+    ]
 )
 
 let project = Project(
     name: "MdEditor",
+    packages: [taskManagerPackage],
     targets: [target]
 )
