@@ -26,31 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      disableMainThreadChecker = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES"
-            testExecutionOrdering = "random">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DataStructuresPackageTests"
-               BuildableName = "DataStructuresPackageTests"
-               BlueprintName = "DataStructuresPackageTests"
-               ReferencedContainer = "container:Packages/DataStructuresPackage">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "TaskManagerPackageTests"
-               BuildableName = "TaskManagerPackageTests"
-               BlueprintName = "TaskManagerPackageTests"
-               ReferencedContainer = "container:Packages/TaskManagerPackage">
+               BlueprintIdentifier = "F1D78562EACF983BB31A081C"
+               BuildableName = "MdEditorTests.xctest"
+               BlueprintName = "MdEditorTests"
+               ReferencedContainer = "container:MdEditor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

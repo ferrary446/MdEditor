@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		325CEE5C8D0FAB09DE4417D8 /* DataStructuresPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B9F5701CE7162C5FA07BA1CD /* DataStructuresPackage */; };
 		3D353F7BC97C38D4C340C9AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448EBB93F78A68E678BA3DA /* SceneDelegate.swift */; };
+		460604728AD87478878D4D34 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA2CDDA8117FF1F33F4115 /* Test.swift */; };
 		9F918E741E72B5101C9DE505 /* TaskManagerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */; };
 		A604951E870E9878A41BF283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53B4AC78FC9BF7B5367F58 /* AppDelegate.swift */; };
 		E949DAFD58405463BE7D96C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F13CAF91B046ECA2FD0D82 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E7FF6BD944BC806BBC7471BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD6D557A83A5C4FBBA31CD2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -30,11 +41,14 @@
 /* Begin PBXFileReference section */
 		1EE3B911DF7C0FD350112B75 /* TaskManagerPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TaskManagerPackage; path = Packages/TaskManagerPackage; sourceTree = "<group>"; };
 		1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MdEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2413C3394B66262195C857FD /* MdEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MdEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B53B4AC78FC9BF7B5367F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F13CAF91B046ECA2FD0D82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B94DDF9E3A79C8C91FD465A /* MdEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MdEditor-Info.plist"; sourceTree = "<group>"; };
+		97E9A5B894798AE0D54D14F9 /* MdEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MdEditorTests-Info.plist"; sourceTree = "<group>"; };
 		A448EBB93F78A68E678BA3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6A679F8D4699B6B9ADB22D1 /* DataStructuresPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataStructuresPackage; path = Packages/DataStructuresPackage; sourceTree = "<group>"; };
+		E2FA2CDDA8117FF1F33F4115 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9402E847DE2FB8C3C77148A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,8 +75,17 @@
 			isa = PBXGroup;
 			children = (
 				1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */,
+				2413C3394B66262195C857FD /* MdEditorTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2FDBE81C33F698C3794AE65A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FA2CDDA8117FF1F33F4115 /* Test.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		5555B5AE5B0B882452ACEFC9 /* Packages */ = {
@@ -71,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6B94DDF9E3A79C8C91FD465A /* MdEditor-Info.plist */,
+				97E9A5B894798AE0D54D14F9 /* MdEditorTests-Info.plist */,
 			);
 			path = InfoPlists;
 			sourceTree = "<group>";
@@ -80,6 +111,7 @@
 			children = (
 				CA4BA34CD9FC694EB1784B9F /* Derived */,
 				F7240212FA4694999CAE5A2B /* Sources */,
+				2FDBE81C33F698C3794AE65A /* Tests */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -137,6 +169,25 @@
 			productReference = 1F45E19A9AA3ADCCC7E0ECB2 /* MdEditor.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F1D78562EACF983BB31A081C /* MdEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323D56C1955CBF2AEA2A8AC8 /* Build configuration list for PBXNativeTarget "MdEditorTests" */;
+			buildPhases = (
+				2B9E4C33948E803654549069 /* Run SwiftLint */,
+				52CE978772A348AA429078CB /* Sources */,
+				4CCEAEBCE2E48CD70EBF99A5 /* Resources */,
+				E7FF6BD944BC806BBC7471BD /* Embed Frameworks */,
+				B9402E847DE2FB8C3C77148A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MdEditorTests;
+			productName = MdEditorTests;
+			productReference = 2413C3394B66262195C857FD /* MdEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				182EAD9731EF0C0CEDFA91FA /* MdEditor */,
+				F1D78562EACF983BB31A081C /* MdEditorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,9 +225,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CCEAEBCE2E48CD70EBF99A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B9E4C33948E803654549069 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo: \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n        exit 1\n    fi";
+		};
 		51AEDDD5F56A4E857C76D240 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -205,6 +283,14 @@
 				A604951E870E9878A41BF283 /* AppDelegate.swift in Sources */,
 				3D353F7BC97C38D4C340C9AF /* SceneDelegate.swift in Sources */,
 				E949DAFD58405463BE7D96C3 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CE978772A348AA429078CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460604728AD87478878D4D34 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +434,58 @@
 			};
 			name = Release;
 		};
+		7E1966FC06F992866B478942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MdEditorTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.IY.MdEditorTests;
+				PRODUCT_NAME = MdEditorTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8230E6F8F66043BCFE14FA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MdEditorTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.IY.MdEditorTests;
+				PRODUCT_NAME = MdEditorTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E0FCDC41CF4C721818AD29D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,6 +518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		323D56C1955CBF2AEA2A8AC8 /* Build configuration list for PBXNativeTarget "MdEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1966FC06F992866B478942 /* Debug */,
+				8230E6F8F66043BCFE14FA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		395B29EAB07768BD4B943111 /* Build configuration list for PBXProject "MdEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

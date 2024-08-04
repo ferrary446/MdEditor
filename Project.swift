@@ -57,8 +57,27 @@ let target: Target = .target(
     ]
 )
 
+let testTarget: Target = .target(
+    name: "MdEditorTests",
+    destinations: .iOS,
+    product: .unitTests,
+    bundleId: "ru.IY.MdEditorTests",
+    deploymentTargets: .iOS("15.0"),
+    sources: "Tests/**",
+    scripts: [swiftLintScript],
+    dependencies: []
+)
+
 let project = Project(
     name: "MdEditor",
     packages: [dataStructuresPackage, taskManagerPackage],
-    targets: [target]
+    targets: [target, testTarget],
+    schemes: [
+        .scheme(
+            name: "MdEditor",
+            shared: true,
+            buildAction: .buildAction(targets: ["MdEditor"]),
+            testAction: .targets(["MdEditorTests"])
+        )
+    ]
 )
