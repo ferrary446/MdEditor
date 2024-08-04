@@ -5,7 +5,6 @@ final class QueueTests: XCTestCase {
     func test_givenInitialized_thenInitialParametersMatched() {
         let sut = makeSUT()
 
-        XCTAssertTrue(sut.count == 0)
         XCTAssertTrue(sut.isEmpty)
         XCTAssertNil(sut.peek)
     }
@@ -26,7 +25,6 @@ final class QueueTests: XCTestCase {
 
         let dequeuedValue = sut.dequeue()
 
-        XCTAssertTrue(sut.count == 0)
         XCTAssertTrue(sut.isEmpty)
         XCTAssertNil(sut.peek)
         XCTAssertEqual(dequeuedValue as? Int, 5)

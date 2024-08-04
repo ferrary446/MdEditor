@@ -1,6 +1,7 @@
 @testable import DataStructuresPackage
 import XCTest
 
+// swiftlint:disable empty_count
 final class DoublyLinkedListTests: XCTestCase {
     func test_givenInitialized_thenInitialParametersMatched() {
         let sut = makeSUT()
@@ -85,6 +86,7 @@ final class DoublyLinkedListTests: XCTestCase {
         XCTAssertFalse(sut.isEmpty)
     }
 }
+// swiftlint:enable empty_count
 
 // MARK: - makeSUT
 private extension DoublyLinkedListTests {
