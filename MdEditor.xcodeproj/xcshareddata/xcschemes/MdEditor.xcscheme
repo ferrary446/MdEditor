@@ -29,6 +29,30 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       disableMainThreadChecker = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DataStructuresPackageTests"
+               BuildableName = "DataStructuresPackageTests"
+               BlueprintName = "DataStructuresPackageTests"
+               ReferencedContainer = "container:Packages/DataStructuresPackage">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "TaskManagerPackageTests"
+               BuildableName = "TaskManagerPackageTests"
+               BlueprintName = "TaskManagerPackageTests"
+               ReferencedContainer = "container:Packages/TaskManagerPackage">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
