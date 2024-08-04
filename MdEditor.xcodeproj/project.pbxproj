@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		325CEE5C8D0FAB09DE4417D8 /* TaskManagerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */; };
+		325CEE5C8D0FAB09DE4417D8 /* DataStructuresPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B9F5701CE7162C5FA07BA1CD /* DataStructuresPackage */; };
 		3D353F7BC97C38D4C340C9AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448EBB93F78A68E678BA3DA /* SceneDelegate.swift */; };
+		9F918E741E72B5101C9DE505 /* TaskManagerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */; };
 		A604951E870E9878A41BF283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53B4AC78FC9BF7B5367F58 /* AppDelegate.swift */; };
 		E949DAFD58405463BE7D96C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F13CAF91B046ECA2FD0D82 /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		59F13CAF91B046ECA2FD0D82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B94DDF9E3A79C8C91FD465A /* MdEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MdEditor-Info.plist"; sourceTree = "<group>"; };
 		A448EBB93F78A68E678BA3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6A679F8D4699B6B9ADB22D1 /* DataStructuresPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataStructuresPackage; path = Packages/DataStructuresPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325CEE5C8D0FAB09DE4417D8 /* TaskManagerPackage in Frameworks */,
+				325CEE5C8D0FAB09DE4417D8 /* DataStructuresPackage in Frameworks */,
+				9F918E741E72B5101C9DE505 /* TaskManagerPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 		5555B5AE5B0B882452ACEFC9 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				A6A679F8D4699B6B9ADB22D1 /* DataStructuresPackage */,
 				1EE3B911DF7C0FD350112B75 /* TaskManagerPackage */,
 			);
 			name = Packages;
@@ -126,6 +130,7 @@
 			);
 			name = MdEditor;
 			packageProductDependencies = (
+				B9F5701CE7162C5FA07BA1CD /* DataStructuresPackage */,
 				9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */,
 			);
 			productName = MdEditor;
@@ -399,6 +404,10 @@
 		9E7BA7C9166C2BEC76DFBA51 /* TaskManagerPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskManagerPackage;
+		};
+		B9F5701CE7162C5FA07BA1CD /* DataStructuresPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataStructuresPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

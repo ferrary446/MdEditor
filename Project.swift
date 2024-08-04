@@ -34,6 +34,10 @@ let swiftLintScript: TargetScript = {
     )
 }()
 
+let dataStructuresPackage: Package = .local(
+    path: .relativeToManifest("Packages/DataStructuresPackage")
+)
+
 let taskManagerPackage: Package = .local(
     path: .relativeToManifest("Packages/TaskManagerPackage")
 )
@@ -48,12 +52,13 @@ let target: Target = .target(
     sources: "Sources/**",
     scripts: [swiftLintScript],
     dependencies: [
+        .package(product: "DataStructuresPackage"),
         .package(product: "TaskManagerPackage")
     ]
 )
 
 let project = Project(
     name: "MdEditor",
-    packages: [taskManagerPackage],
+    packages: [dataStructuresPackage, taskManagerPackage],
     targets: [target]
 )
