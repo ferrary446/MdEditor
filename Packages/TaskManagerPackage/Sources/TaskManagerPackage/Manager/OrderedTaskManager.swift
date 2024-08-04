@@ -34,7 +34,11 @@ public final class OrderedTaskManager: ITaskManager {
 	public func addTasks(tasks: [Task]) {
 		taskManager.addTasks(tasks: tasks)
 	}
-	
+
+    public func removeTask(task: Task) {
+        taskManager.removeTask(task: task)
+    }
+
 	private func sorted(tasks: [Task]) -> [Task] {
 		tasks.sorted {
 			if let task0 = $0 as? ImportantTask, let task1 = $1 as? ImportantTask {

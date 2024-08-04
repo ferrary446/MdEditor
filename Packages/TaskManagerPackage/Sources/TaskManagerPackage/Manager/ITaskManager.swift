@@ -12,7 +12,8 @@ public protocol ITaskManager {
 	func uncompletedTasks() -> [Task]
 	func addTask(task: Task)
 	func addTasks(tasks: [Task])
+    func removeTask(task: Task)
 }
 // swiftlint:enable missing_docs
 
-extension TaskManager: ITaskManager { }
+extension TaskManager: ITaskManager {}
